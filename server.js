@@ -52,7 +52,7 @@ app.get("/contact-us",(req,res)=>{
 
 });
 
-const PORT=3000;
+const PORT=process.emv.PORT || 3000;//environment variable
 app.listen(PORT,()=>{
     console.log(`Web Server`);
 })
